@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Quicksand, sans-serif;
+}
+main {
+  overflow: auto;
+  padding: 50px 20px 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+h2,
+h3 {
+  color: #3e497a;
+}
+footer {
+  background-color: #3e497a;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+footer,
+nav a {
+  color: #f0f0f0;
+}
+nav a {
+  flex-grow: 2;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+}
+nav a,
+nav p {
+  text-decoration: none;
+}
+nav p {
+  color: #f1d00a;
+  flex-grow: 1;
+  font-family: VT323, monospace;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: left;
+}
+nav a:focus,
+nav a:hover {
+  color: #f1d00a;
+  font-weight: 700;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav {
+  background-color: #3e497a;
+  display: flex;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header {
+  display: inline;
+}
+.profile header {
+  text-align: center;
+}
+.featured-image {
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.profile img {
+  width: 200px;
+}
+.card {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  padding: 20px;
+}
+.card h2,
+h3 {
+  padding-bottom: 10px;
+}
+.card p {
+  text-align: justify;
+  text-indent: 45px;
+}
+.card img {
+  padding-bottom: 10px;
+}
+.jumbotron {
+  align-items: center;
+  background-color: #3e497a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  justify-content: center;
+  min-height: 675px;
+  padding: 60px;
+  text-align: center;
+}
+.jumbotron h1 {
+  color: #f1d00a;
+  font-size: 100px;
+}
+.jumbotron p {
+  font-size: 30px;
+  padding: 30px 0;
+}
+#content {
+  float: left;
+  width: 70%;
+}
+aside {
+  float: right;
+  padding-left: 20px;
+  width: 30%;
+}
+.goto {
+  background-image: url(/assets/image/angle-down-solid.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  border-radius: 100%;
+  height: 70px;
+  margin-top: 50px;
+  opacity: 30%;
+  transition: 0.6s ease;
+  width: 70px;
+}
+.goto:hover {
+  background-color: #fff;
+}
+.slider-container {
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
+}
+.nextBtn,
+.prevBtn {
+  background-color: #0000;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: -22px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  width: auto;
+}
+.nextBtn {
+  border-radius: 10px 0 0 10px;
+  right: 0;
+}
+.nextBtn:hover,
+.prevBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#wisata section {
+  margin: 10px 0;
+}
+table {
+  border-collapse: collapse;
+}
+table th,
+td {
+  padding: 0 10px;
+}
+@media screen and (max-width: 768px) {
+  #content,
+  aside {
+    padding: 0;
+    width: 100%;
+  }
+  .jumbotron h1 {
+    font-size: 350%;
+  }
+  .jumbotron p {
+    font-size: 100%;
+    padding-top: 30px;
+  }
+  .jumbotron {
+    min-height: 600px;
+    padding-top: 0;
+  }
+  .goto {
+    background-size: 60%;
+    height: 50px;
+    margin-top: 50px;
+    width: 50px;
+  }
+  .nextBtn,
+  .prevBtn {
+    font-size: 11px;
+  }
+  footer {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 460px) {
+  #content,
+  aside {
+    padding: 0;
+    width: 100%;
+  }
+  .jumbotron h1 {
+    font-size: 250%;
+  }
+  .jumbotron p {
+    font-size: 80%;
+    padding-top: 30px;
+  }
+  .jumbotron {
+    min-height: 600px;
+    padding-top: 0;
+  }
+  .goto {
+    background-size: 60%;
+    margin-top: 50px;
+  }
+  nav {
+    padding: 10px 20px;
+  }
+  nav p {
+    justify-content: center;
+  }
+  nav a,
+  nav p {
+    font-size: 18px;
+  }
+}
